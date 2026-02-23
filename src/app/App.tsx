@@ -6,6 +6,7 @@ import { Projects } from './components/Projects';
 import { Skills } from './components/Skills';
 import { Contact } from './components/Contact';
 import { Footer } from './components/Footer';
+import { Resume } from './components/Resume';
 
 export default function App() {
   const [isProjectDetailView, setIsProjectDetailView] = useState(false);
@@ -30,6 +31,7 @@ export default function App() {
       )}
       <Projects onViewChange={setIsProjectDetailView} />
       <Skills />
+<Resume />
       <Contact />
       <Footer />
     </div>
