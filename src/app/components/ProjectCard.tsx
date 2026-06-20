@@ -1,5 +1,5 @@
-import { motion } from 'motion/react';
-import { ExternalLink } from 'lucide-react';
+import { motion } from "motion/react";
+import { ExternalLink } from "lucide-react";
 
 interface ProjectCardProps {
   title: string;
@@ -11,7 +11,15 @@ interface ProjectCardProps {
   onClick?: () => void;
 }
 
-export function ProjectCard({ title, category, description, image, tags, index, onClick }: ProjectCardProps) {
+export function ProjectCard({
+  title,
+  category,
+  description,
+  image,
+  tags,
+  index,
+  onClick,
+}: ProjectCardProps) {
   return (
     <motion.div
       className="group relative bg-slate-800/50 rounded-2xl overflow-hidden border border-slate-700 hover:border-slate-600 transition-all duration-300 cursor-pointer"
@@ -27,12 +35,12 @@ export function ProjectCard({ title, category, description, image, tags, index, 
         <motion.img
           src={image}
           alt={title}
-          className="w-full h-full object-cover"
+          className="w-full h-full object-contain bg-white"
           whileHover={{ scale: 1.05 }}
           transition={{ duration: 0.4 }}
         />
         <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/40 to-transparent opacity-60 group-hover:opacity-80 transition-opacity" />
-        
+
         {/* Hover Overlay */}
         <motion.div
           className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity"
@@ -52,10 +60,8 @@ export function ProjectCard({ title, category, description, image, tags, index, 
         <h3 className="text-2xl font-bold text-white mb-3 group-hover:text-purple-400 transition-colors">
           {title}
         </h3>
-        <p className="text-slate-400 mb-4 line-clamp-2">
-          {description}
-        </p>
-        
+        <p className="text-slate-400 mb-4 line-clamp-2">{description}</p>
+
         {/* Tags */}
         <div className="flex flex-wrap gap-2">
           {tags.map((tag) => (
