@@ -8,6 +8,8 @@ interface ProjectCardProps {
   image: string;
   tags: string[];
   index: number;
+  isCoverImage?: boolean;
+  grayBg?: boolean;
   onClick?: () => void;
 }
 
@@ -18,6 +20,8 @@ export function ProjectCard({
   image,
   tags,
   index,
+  isCoverImage,
+  grayBg,
   onClick,
 }: ProjectCardProps) {
   return (
@@ -35,7 +39,7 @@ export function ProjectCard({
         <motion.img
           src={image}
           alt={title}
-          className="w-full h-full object-contain bg-white"
+          className={`w-full h-full ${isCoverImage ? "object-cover" : "object-contain"} ${grayBg ? "bg-[#f5f5f5]" : "bg-white"}`}
           whileHover={{ scale: 1.05 }}
           transition={{ duration: 0.4 }}
         />
