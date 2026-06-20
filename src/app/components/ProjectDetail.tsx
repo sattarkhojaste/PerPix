@@ -1,7 +1,7 @@
-import { motion } from 'motion/react';
-import { ArrowLeft, Calendar, Users, Wrench } from 'lucide-react';
-import { useState } from 'react';
-import { ImageLightbox } from './ImageLightbox';
+import { motion } from "motion/react";
+import { ArrowLeft, Calendar, Users, Wrench } from "lucide-react";
+import { useState } from "react";
+import { ImageLightbox } from "./ImageLightbox";
 
 interface ProjectDetailProps {
   project: {
@@ -13,6 +13,9 @@ interface ProjectDetailProps {
     fullDescription: string;
     role: string;
     duration: string;
+    responsibilities?: string;
+    businessGoals?: string;
+    productGoals?: string;
     team: string;
     tools: string[];
     challenge: string;
@@ -41,7 +44,9 @@ export function ProjectDetail({ project, onBack }: ProjectDetailProps) {
   };
 
   const previousImage = () => {
-    setCurrentImageIndex((prev) => (prev - 1 + project.images.length) % project.images.length);
+    setCurrentImageIndex(
+      (prev) => (prev - 1 + project.images.length) % project.images.length,
+    );
   };
 
   return (
@@ -76,7 +81,7 @@ export function ProjectDetail({ project, onBack }: ProjectDetailProps) {
           transition={{ duration: 0.8 }}
         />
         <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/60 to-transparent" />
-        
+
         <div className="absolute bottom-0 left-0 right-0 p-12 max-w-7xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -157,7 +162,9 @@ export function ProjectDetail({ project, onBack }: ProjectDetailProps) {
               </div>
               <div className="font-semibold text-white">Tools</div>
             </div>
-            <div className="text-slate-400 text-sm">{project.tools.join(', ')}</div>
+            <div className="text-slate-400 text-sm">
+              {project.tools.join(", ")}
+            </div>
           </motion.div>
         </div>
 
@@ -173,6 +180,57 @@ export function ProjectDetail({ project, onBack }: ProjectDetailProps) {
             {project.fullDescription}
           </p>
         </motion.div>
+
+        {/* responsibilities */}
+        {project.responsibilities && (
+          <motion.div
+            className="mb-20"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.7 }}
+          >
+            <h2 className="text-4xl font-bold text-white mb-6">
+              My Responsibilities
+            </h2>
+            <p className="text-xl text-slate-300 leading-relaxed">
+              {project.responsibilities}
+            </p>
+          </motion.div>
+        )}
+
+        {/* businessGoals */}
+        {project.businessGoals && (
+          <motion.div
+            className="mb-20"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.7 }}
+          >
+            <h2 className="text-4xl font-bold text-white mb-6">
+              Business Goals
+            </h2>
+            <p className="text-xl text-slate-300 leading-relaxed">
+              {project.businessGoals}
+            </p>
+          </motion.div>
+        )}
+
+        {/* productGoals */}
+        {project.productGoals && (
+          <motion.div
+            className="mb-20"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.7 }}
+          >
+            <h2 className="text-4xl font-bold text-white mb-6">
+              Product Goals
+            </h2>
+            <p className="text-xl text-slate-300 leading-relaxed">
+              {project.productGoals}
+            </p>
+          </motion.div>
+        )}
 
         {/* Challenge */}
         <motion.div
@@ -210,7 +268,9 @@ export function ProjectDetail({ project, onBack }: ProjectDetailProps) {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 1.0 }}
           >
-            <h2 className="text-4xl font-bold text-white mb-8">Design Showcase</h2>
+            <h2 className="text-4xl font-bold text-white mb-8">
+              Design Showcase
+            </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {project.images.map((img, index) => (
                 <motion.div
@@ -269,7 +329,9 @@ export function ProjectDetail({ project, onBack }: ProjectDetailProps) {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 1.2 }}
         >
-          <h3 className="text-2xl font-bold text-white mb-4">Technologies & Skills</h3>
+          <h3 className="text-2xl font-bold text-white mb-4">
+            Technologies & Skills
+          </h3>
           <div className="flex flex-wrap gap-3">
             {project.tags.map((tag) => (
               <span

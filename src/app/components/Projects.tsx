@@ -84,6 +84,15 @@ import imgMonta2 from "../../assets/Monta-4.png";
 import imgMonta3 from "../../assets/Monta-5.png";
 import imgMonta4 from "../../assets/Monta-6.png";
 
+// Monta images
+import imgSamXHero from "../../assets/SamXBanner.png";
+import imgSamX1 from "../../assets/SamX-1.png";
+import imgSamX2 from "../../assets/SamX-2.png";
+import imgSamX3 from "../../assets/SamX-3.png";
+import imgSamX4 from "../../assets/SamX-4.png";
+import imgSamX5 from "../../assets/SamX-5.png";
+import imgSamX6 from "../../assets/SamX-6.png";
+
 import imgDoctorClinic from "../../assets/d6206e251717310cbba8e28db35153276e6c7a64.png";
 import imgDoctorInfo from "../../assets/5547811981a2077cfe90630f6486145376ff1337.png";
 import imgMessengerWireframeLf2 from "../../assets/2d64747a05dc842a6209ab27fb67ad87b63d1f18.png";
@@ -495,6 +504,55 @@ const projects = [
       "Elevated cross-functional efficiency by introducing structured design processes and collaborative workflows, enabling faster iteration cycles and stronger alignment between product, design, and engineering",
     ],
     images: [imgMonta1, imgMonta2, imgMonta3, imgMonta4],
+  },
+  // 9. SamX
+  {
+    id: "SamX",
+    title: "SamX",
+    category: "SAMAN Insurance Application",
+    description:
+      "SamX is a digital insurance ecosystem by Saman Insurance that redefines how users and businesses interact with insurance services across web and mobile platforms. By combining simplified workflows with intelligent features like personalized recommendations and health profiling, it transforms traditionally complex processes into clear, efficient, and user-friendly experiences.",
+    image: imgSamXHero,
+    tags: [
+      "Ai Design Agents",
+      "Figma",
+      "Figjam",
+      "Flutter",
+      "Firebase",
+      "Clarity",
+      "Balsamiq",
+    ],
+    fullDescription:
+      "SamX is a digital insurance platform developed by Saman Insurance Company, designed to transform traditional insurance services into a seamless, user-centric digital experience across mobile and web platforms. The product operates within both B2C and B2B domains, providing end-users with accessible insurance services while enabling businesses and partners to integrate and manage insurance offerings efficiently. SamX aims to simplify complex insurance processes such as policy purchase, claim management, and user profile assessment through intuitive interfaces and streamlined user journeys. By leveraging digital innovation, SamX focuses on increasing transparency, trust, and usability in an industry often perceived as complex and rigid. The platform introduces features such as health profiling, personalized insurance recommendations, and integrated payment solutions, allowing users to interact with insurance services in a more flexible and understandable way. With a strong emphasis on scalability and accessibility, SamX seeks to redefine how users engage with insurance products, making them more approachable, efficient, and aligned with modern digital behaviors.",
+    role: "Leading Design Strategy & Team for Application",
+    responsibilities:
+      "As a Senior Product Designer leading design strategy, I played a key role in shaping the experience and direction of the SamX application across its core product areas. My responsibilities included: Leading end-to-end design processes from discovery, research, and ideation to final implementation Defining UX strategy and aligning design decisions with both business goals and user needs Translating complex insurance concepts into clear, intuitive, and user-friendly experiences Conducting user research, usability testing, and behavioral analysis to inform product decisions Designing and optimizing critical user flows such as onboarding, insurance purchase, health profiling, and checkout Collaborating closely with product managers, developers, and stakeholders to ensure feasibility and high-quality execution Leading design initiatives for key features such as payment flows, wallet integration, and hybrid payment scenarios Contributing to and evolving the product’s design system to ensure consistency, scalability, and efficiency Facilitating communication between cross-functional teams and aligning stakeholders around design solutions Driving a user-centered design culture within the product team",
+    duration: "Jul 2024 - Jul 2026",
+    businessGoals:
+      "Increase user adoption and retention within the digital insurance ecosystem Enhance trust and transparency in insurance services Drive conversion rates in key flows such as policy purchase and checkout Expand digital channels and reduce dependency on traditional insurance processes Support scalable growth of the platform across multiple insurance products and services Strengthen Saman Insurance’s position as a digital-first insurance provide",
+    productGoals:
+      "Simplify and humanize the insurance experience for end-users Create seamless, end-to-end digital journeys from onboarding to claim and payment Improve usability and accessibility across all user touchpoints Enable flexible and integrated financial interactions (wallet, IPG, credit usage) Provide users with personalized and data-driven insurance experiences (e.g., health profile) Build a consistent and scalable design foundation for future product expansion Reduce friction in critical user flows and increase task success rates Align product experience with modern user expectations in fintech and insurtech products",
+    team: "3 Designers, 2 Front-end (React), 7 Application (Flutter), 3 Back-end Engineers",
+    tools: [
+      "Ai Design Agents",
+      "Figma",
+      "Figjam",
+      "Flutter",
+      "Firebase",
+      "Clarity",
+      "Smartlook",
+    ],
+    challenge:
+      "Complexity of insurance concepts and difficulty in making them understandable for general users Low user trust and engagement due to traditionally complicated insurance processes Designing flexible payment experiences (wallet + IPG + credit solutions like Daracard) Balancing business constraints, legal considerations, and user experience Creating a scalable experience across multiple services and future product expansions Fragmented user journeys across different insurance services Need for consistency across rapidly evolving features and flows Addressing a wide range of users with different levels of financial and digital literacy",
+    solution:
+      "Simplified complex insurance flows through progressive disclosure and clear UX writing Designed structured and guided user journeys to reduce cognitive load Introduced flexible and transparent payment experiences with clear system feedback Standardized interaction patterns through a scalable design system Redesigned key flows (onboarding, checkout, health profile) to improve clarity and completion rates Conducted continuous user testing to validate assumptions and iterate quickly Improved information hierarchy and content structure to enhance understanding Created reusable UX patterns to support faster and more consistent product development",
+    outcomes: [
+      "Architected a cohesive and scalable product ecosystem by aligning fragmented insurance services under a unified experience, enabling seamless interaction across B2C and partner-driven (B2B) touchpoints",
+      "Redesigned core user flows as interconnected systems rather than isolated features, improving end-to-end journey continuity across policy purchase, claims, and financial transactions",
+      "Established a flexible payment architecture integrating wallet, IPG, and Daracard flows, optimizing system reliability and reducing friction in critical conversion paths",
+      "Elevated product scalability and team efficiency by introducing structured design processes and system-level thinking, enabling faster iteration, easier onboarding, and more consistent feature expansion",
+    ],
+    images: [imgSamX1, imgSamX2, imgSamX3, imgSamX4, imgSamX5, imgSamX6],
   },
 ];
 
