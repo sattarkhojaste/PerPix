@@ -77,6 +77,13 @@ import imgEmpressBeautyProducts from "../../assets/03da6bac1f964a711a4da8993d3f3
 import imgEmpressBeautyShop from "../../assets/460b013fcba619d471b6f17c5a3b319cc1272afa.png";
 import imgEmpressBeautyContact from "../../assets/e5c086b3be345635be4f3e1f326dd4d1ed1f284c.png";
 
+// Monta images
+import imgMontaHero from "../../assets/MontaBanner.png";
+import imgMonta1 from "../../assets/Monta-3.png";
+import imgMonta2 from "../../assets/Monta-4.png";
+import imgMonta3 from "../../assets/Monta-5.png";
+import imgMonta4 from "../../assets/Monta-6.png";
+
 import imgDoctorClinic from "../../assets/d6206e251717310cbba8e28db35153276e6c7a64.png";
 import imgDoctorInfo from "../../assets/5547811981a2077cfe90630f6486145376ff1337.png";
 import imgMessengerWireframeLf2 from "../../assets/2d64747a05dc842a6209ab27fb67ad87b63d1f18.png";
@@ -453,6 +460,41 @@ const projects = [
       imgEmpressBeautyShop,
       imgEmpressBeautyContact,
     ],
+  },
+  // 8. Monta
+  {
+    id: "Monta",
+    title: "Monta",
+    category: "Modern Online Teaching Assistant",
+    description:
+      "Monta is an advanced digital learning platform in Iran that reimagines how education is delivered and managed, bridging institutions and learners through a unified ecosystem. By combining powerful B2B tools with a student-focused experience, it simplifies complex educational processes into seamless, efficient, and user-friendly journeys.",
+    image: imgMontaHero,
+    tags: [
+      "Figma",
+      "Figjam",
+      "React",
+      "Smartlook",
+      "Miro",
+      "Balsamiq",
+      "Lottie",
+    ],
+    fullDescription:
+      "Monta is the pioneering, knowledge-based leader in Iran’s E-learning sector, engineered to streamline and elevate the educational ecosystem. The platform serves as a dual-faceted network: a robust B2B infrastructure for educational institutions, schools, advisors, and teachers to manage performance and curriculum, coupled with an engaging B2C digital suite for students seeking optimized learning paths. Tailored for both desktop and mobile environments, Monta transforms complex educational data, assessment metrics, and heavy workflows into highly intuitive, calm, and productive user journeys, ensuring academic goals are reached with minimal cognitive friction.",
+    role: "Product Designer Lead",
+    duration: "Sep 2023 - Jul 2024",
+    team: "2 Designers, 5 Front-end (React), 5 Back-end Engineers",
+    tools: ["Figma", "Figjam", "React", "PS", "Ai", "Smartlook", "Miro"],
+    challenge:
+      "Multi-Persona Complexity: Translating highly divergent requirements from two distinct target audiences—managing complex operational panels for non-technical institutional users (B2B) while simultaneously retaining a focus on psychological reassurance and engagement for students (B2C). Data-Heavy Dashboards: Overcoming the high cognitive load inherent in educational metrics, online testing data, and large-scale question banks on desktop, requiring structural architecture rather than superficial decoration. Responsive Parity: Ensuring complex administrative tools and interactive question builders seamlessly adapted from heavy desktop layouts into fluid, legible, and anxiety-reducing mobile interfaces.",
+    solution:
+      "System Scaling & Efficiency: Unifying the platform's fragmented UI architecture under a single scalable design system to reduce time-to-market for future B2B features and minimize front-end technical debt. Retention & Productivity Uplift: Increasing daily active engagement (DAU) and user satisfaction across the ecosystem by redesigning cluttered educational flows into simplified, clear decision-making pathways. Trust & Anxiety Reduction: Building an emotionally calm and supportive testing environment that reduces user anxiety during high-stakes online examinations.",
+    outcomes: [
+      "Unified fragmented product experiences under a scalable design system, significantly reducing design inconsistencies and accelerating feature delivery across B2B and B2C platforms",
+      "Transformed complex, data-heavy educational workflows into structured and intuitive user journeys, improving decision clarity and reducing cognitive load for both students and institutional users",
+      "ncreased user engagement and platform usability by redesigning critical learning and assessment flows, contributing to higher retention and more consistent daily usage",
+      "Elevated cross-functional efficiency by introducing structured design processes and collaborative workflows, enabling faster iteration cycles and stronger alignment between product, design, and engineering",
+    ],
+    images: [imgMonta1, imgMonta2, imgMonta3, imgMonta4],
   },
 ];
 
